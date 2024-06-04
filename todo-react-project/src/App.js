@@ -3,6 +3,7 @@ import Home from  './Pages/home'
 import NewTask from './Pages/newtask'
 import NewUser from './Pages/newuser'
 import Dashboard from './Pages/dashboard'
+import Test from './Pages/Test'
 import Layout from './Layout'
 
 import { HashRouter  as BrowserRouter,Route,Routes } from 'react-router-dom';
@@ -16,6 +17,7 @@ function App() {
     <Route path="/newtask" element={<NewTask />} /> 
     <Route path="/newuser" element={<NewUser />} /> 
     <Route path="/dashboard" element={<Dashboard />} /> 
+    <Route path="/Test" element={<Test />} /> 
   </Route>
   </Routes>
 </BrowserRouter>

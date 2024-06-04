@@ -1,0 +1,243 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+  
+body { 
+    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0; 
+    margin: 0; 
+    padding: 0; 
+    color: #333; 
+} 
+  
+header { 
+    background-color: white; 
+    color: green; 
+    text-align: center; 
+    padding: 1rem 0; 
+    box-shadow: 0 4px 18px grey; 
+} 
+  
+main { 
+    max-width: 1400px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    background-color: #fff; 
+    box-shadow: 0 4px 18px grey; 
+    border-radius: 15px; 
+    height: auto;
+} 
+  
+.mainBody{
+
+  width: 100%;
+  padding: 1px;
+}
+.taskform { 
+  
+   /* flex-wrap: wrap; */
+   justify-content: space-evenly;
+  
+    width: 100%;
+} 
+
+.taskform { 
+  
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+} 
+
+.taskform select
+{
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    flex: 1; 
+    border-radius: 10px; 
+    font-size: 16px;
+    width: 100%;
+}
+.taskform input {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    flex: 1; 
+    border-radius: 10px; 
+    width : 100%
+}
+.taskform lable {
+   
+   font-weight: bolder;
+}
+
+.taskform button { 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    font-size: 16px; 
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    
+  
+} 
+  
+button { 
+    background-color: green; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+
+} 
+  
+.mark-done { 
+    padding: 10px; 
+    font-size: 16px; 
+    flex: 1; 
+    border-radius: 15px; 
+    background-color: crimson; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+} 
+  
+.task-list { 
+    border: 1px solid #ddd; 
+    padding: 10px; 
+   
+} 
+  
+table { 
+    width: 100%; 
+    margin-top: 20px; 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    justify-content: space-between;
+    text-align: center;
+} 
+  
+table th, 
+table td { 
+    padding: 19px; 
+    border-bottom: 1px solid #ddd; 
+    text-align: center; 
+} 
+  
+table th { 
+    background-color: #eee; 
+    color: black; 
+    border-radius: 10px; 
+} 
+  
+.completed-task-list { 
+    margin-top: 20px; 
+} 
+  
+.completed-task { 
+    padding: 10px; 
+    border: 1px solid crimson; 
+    border-radius: 5px; 
+    background-color: #eaffea; 
+} 
+  
+.completed-task h2 { 
+    color: #28a745; 
+} 
+  
+h2 { 
+    font-size: 1.3rem; 
+} 
+  
+.heading { 
+    padding-bottom: 10px; 
+} 
+  
+.cheading { 
+    color: rgb(54, 54, 54); 
+}
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 20px;
+  }
+  
+  /* Table header styling */
+  thead th {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Table body row styling */
+  tbody tr {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Table body cell styling */
+  td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Styling for completed todos */
+  tr.completed {
+    background-color: #d3ffd3; /* Light green background for completed todos */
+  }
+  
+  /* Styling for uncompleted todos */
+  tr.uncompleted {
+    background-color: #ffe8e8; /* Light red background for uncompleted todos */
+  }
+  
+  .container{
+    display: flex;
+    width:100%;
+  }
+  aside{
+    width: 50%;
+    padding-left: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: right;
+    font-style: italic;
+    display: block;
+    border-radius: 5%;
+    background-color: #fff; 
+    box-shadow: 0 4px 18px grey; 
+  }
+
+  /* Responsive table styles */
+  @media screen and (max-width: 600px) {
+    /* Hide table headers on small screens */
+    thead {
+      display: none;
+    }
+  
+    /* Display table rows as blocks */
+    tbody tr {
+      display: block;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  
+    /* Display table cells as block */
+    td {
+      display: block;
+      padding: 10px;
+    }
+  
+    /* Apply padding to first cell for better alignment */
+    td:first-child {
+      padding-top: 20px;
+    }
+
+    
+  }
+  
